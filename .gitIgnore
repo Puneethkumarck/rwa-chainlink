@@ -7,6 +7,8 @@
 node_modules/
 yarn-error.log
 tsconfig.tsbuildinfo
+/.deps
+/artifacts
 
 /jacob
 /fixtures/cloudflare
