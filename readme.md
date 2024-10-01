@@ -212,4 +212,21 @@ We're creating a digital token that:
 
 This demonstrates how blockchain technology can be used to create new ways of investing in and managing real estate.
 
-![real_estate_asset.png](docs/real_estate_asset.png)
+```mermaid
+graph TD
+    A[Real Estate Property] -->|Tokenization| B(Property Token on Ethereum)
+    B -->|Chainlink Enrichment| C{Enriched Token}
+    C -->|Add Market Value| D[Current Market Value]
+    C -->|Add Ownership Proof| E[Proof of Ownership]
+    C -->|Add Tax Info| F[Property Tax Status]
+    C -->|Add Occupancy| G[Occupancy Status]
+    C -->|Chainlink CCIP| H(Token on Binance Smart Chain)
+    H -->|Chainlink Updates| I{Updated Token}
+    I -->|Update Market Value| J[New Market Value]
+    I -->|Update Ownership| K[Updated Ownership]
+    I -->|Add Renovation Info| L[Recent Renovations]
+    I -->|Chainlink Automation| M{Programmable Actions}
+    M -->|Value Increase| N[Notify Token Holders]
+    M -->|Tax Unpaid| O[Freeze Transfers]
+    M -->|Enable| P[Fractional Ownership]
+```
